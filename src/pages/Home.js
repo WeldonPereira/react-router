@@ -16,6 +16,7 @@ const Home = () => {
               <td>ID</td>
               <td>NOME</td>
               <td>PREÇO</td>
+              <td>SAIBA MAIS</td>
             </tr>
           </thead>
           <tbody>
@@ -23,7 +24,8 @@ const Home = () => {
               <tr key={item.id}>
                 <td>{item.id}</td>
                 <td>{item.name}</td>
-                <td>{item.price}</td>
+                <td>R${item.price}</td>
+                <td><Link to={`/products/${item.id}`} className="details-link">Detalhes</Link></td>
               </tr>
             ))}
           </tbody>
