@@ -12,10 +12,7 @@ nav a{
     padding: .5rem 1rem;
 }
 
-nav a:hover{
-    background-color: #faf8f8;
-}
-
 .active{
-    background-color: #faf8f8;
+    background-color: #000;
+    color: #fff;
 }
